@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Welcome to the labratory</h1>
+	<p> List of researches:</p>
+	<ul>
+	{% for name in researcher %}
+		<li>{{ name.firstname }} {{ name.lastname }}</li>
+	{% endfor %}
+	</ul>
+{% endblock %}
+

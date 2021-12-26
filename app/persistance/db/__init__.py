@@ -9,8 +9,6 @@ def init_db(app):
     """
     Set environment variables for the database in .env file in the project root
     folder.
-    :param app: Flask app object
-    :return: None
     """
     global client, db
     username = app.config["DB_USER"]
